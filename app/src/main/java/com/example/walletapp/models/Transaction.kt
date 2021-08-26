@@ -1,4 +1,4 @@
-package com.example.walletapp
+package com.example.walletapp.models
 
 data class Transaction(
     var description:String,

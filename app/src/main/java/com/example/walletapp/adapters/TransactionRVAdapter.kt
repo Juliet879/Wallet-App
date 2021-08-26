@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.walletapp.models.Transaction
 
 class TransactionRVAdapter(var transactionList:MutableList<Transaction>) :RecyclerView.Adapter<TransactionItemView>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransactionItemView {

@@ -1,4 +1,4 @@
-package com.example.walletapp
+package com.example.walletapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.btnSubmit.setOnClickListener {
-            var intent = Intent(baseContext,TransactionActivity::class.java)
+            var intent = Intent(baseContext, TransactionActivity::class.java)
             intent.putExtra("name" , binding.etName.text.toString())
             intent.putExtra("currency" , binding.etCurrency.text.toString())
             startActivity(intent)

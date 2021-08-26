@@ -1,9 +1,10 @@
-package com.example.walletapp
+package com.example.walletapp.ui
 
-import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.walletapp.models.Transaction
+import com.example.walletapp.TransactionRVAdapter
 import com.example.walletapp.databinding.ActivityTransactionBinding
 
 class TransactionActivity : AppCompatActivity() {
