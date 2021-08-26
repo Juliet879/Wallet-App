@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.walletapp.models.Transaction
 
@@ -21,6 +22,9 @@ class TransactionRVAdapter(var transactionList:MutableList<Transaction>) :Recycl
         holder.tvReference.text = currentTransaction.reference
         holder.tvType.text = currentTransaction.transaction_type
 
+        if (holder.tvType.text == "CREDIT"){
+            holder.cvTransactions.cardBackgroundColor = "purple_500"
+        }
     }
 
     override fun getItemCount(): Int {
@@ -33,6 +37,6 @@ class TransactionItemView(itemView: View):RecyclerView.ViewHolder(itemView){
     var tvDescription = itemView.findViewById<TextView>(R.id.tvDescription)
     var tvAmount = itemView.findViewById<TextView>(R.id.tvAmount)
     var tvType = itemView.findViewById<TextView>(R.id.tvType)
-
+    var cvTransactions = itemView.findViewById<CardView>(R.id.cvTransaction)
 
 }

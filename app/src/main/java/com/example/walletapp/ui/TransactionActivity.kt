@@ -33,6 +33,7 @@ class TransactionActivity : AppCompatActivity() {
             Transaction("deposited","HREFSBRHE","21-02-2010",2322,"DEBIT"),
         )
 
+
         binding.rvTransactions.adapter = TransactionRVAdapter(transactions)
         binding.rvTransactions.layoutManager = LinearLayoutManager(baseContext)
 
